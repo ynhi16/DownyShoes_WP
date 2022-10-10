@@ -1490,6 +1490,15 @@ button.btn1 {
     padding: 10px;
 }
 
+.page {
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+}
+
 
 /*--responsive--*/
 

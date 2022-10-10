@@ -197,6 +197,13 @@ function thumbnail_post_type(){
 	
 }
 add_action('init', 'thumbnail_post_type');
+function example_use_widgets_block_editor( $use_widgets_block_editor ) {
+    if ( 123 === get_current_user_id() ) {
+        return false;
+    }
+    return $use_widgets_block_editor;
+}
+add_filter( 'use_widgets_block_editor', 'example_use_widgets_block_editor' );
 
 // function add_quickmore() {
 // 	echo '';
