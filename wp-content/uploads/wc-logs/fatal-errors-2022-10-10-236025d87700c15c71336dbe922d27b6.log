@@ -1,0 +1,33 @@
+2022-10-10T07:54:33+00:00 CRITICAL Uncaught Error: Call to undefined function the_pamalink() in C:\xampp\htdocs\downyshoes\wp-content\themes\downyshoes\woocommerce\loop\sale-flash.php:27
+Stack trace:
+#0 C:\xampp\htdocs\downyshoes\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\downyshoes\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1407): wc_get_template('loop/sale-flash...')
+#2 C:\xampp\htdocs\downyshoes\wp-includes\class-wp-hook.php(307): woocommerce_show_product_loop_sale_flash('')
+#3 C:\xampp\htdocs\downyshoes\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\downyshoes\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\downyshoes\wp-content\themes\downyshoes\woocommerce\content-product.php(46): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\downyshoes\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\downyshoes\wp-content\plugins\woocommerce\includes\wc-core-functions.php(2 in C:\xampp\htdocs\downyshoes\wp-content\themes\downyshoes\woocommerce\loop\sale-flash.php on line 27
+
+2022-10-10T07:54:55+00:00 CRITICAL Uncaught Error: Call to undefined function the_pamalink() in C:\xampp\htdocs\downyshoes\wp-content\themes\downyshoes\woocommerce\loop\sale-flash.php:26
+Stack trace:
+#0 C:\xampp\htdocs\downyshoes\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\downyshoes\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1407): wc_get_template('loop/sale-flash...')
+#2 C:\xampp\htdocs\downyshoes\wp-includes\class-wp-hook.php(307): woocommerce_show_product_loop_sale_flash('')
+#3 C:\xampp\htdocs\downyshoes\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\downyshoes\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\downyshoes\wp-content\themes\downyshoes\woocommerce\content-product.php(46): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\downyshoes\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\downyshoes\wp-content\plugins\woocommerce\includes\wc-core-functions.php(2 in C:\xampp\htdocs\downyshoes\wp-content\themes\downyshoes\woocommerce\loop\sale-flash.php on line 26
+
+2022-10-10T09:16:16+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::the_permalink() in C:\xampp\htdocs\downyshoes\wp-content\themes\downyshoes\woocommerce\content-product.php:42
+Stack trace:
+#0 C:\xampp\htdocs\downyshoes\wp-includes\template.php(772): require()
+#1 C:\xampp\htdocs\downyshoes\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#2 C:\xampp\htdocs\downyshoes\wp-content\themes\downyshoes\woocommerce\archive-product.php(77): wc_get_template_part('content', 'product')
+#3 C:\xampp\htdocs\downyshoes\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\downyshoes\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\downyshoes\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\downyshoes\wp-content\themes\downyshoes\woocommerce\content-product.php on line 42
+

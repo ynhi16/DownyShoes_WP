@@ -23,6 +23,7 @@ global $post, $product;
 
 ?>
 <?php if ( $product->is_on_sale() ) : ?>
+
 <span class="onsale">Giảm
     <?php echo precentSale($product->get_regular_price(),$product->get_sale_price()) ?>%
 </span>

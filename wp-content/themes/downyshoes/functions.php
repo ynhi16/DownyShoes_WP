@@ -197,3 +197,8 @@ function thumbnail_post_type(){
 	
 }
 add_action('init', 'thumbnail_post_type');
+
+// function add_quickmore() {
+// 	echo '';
+// }
+// add_action('woocommerce_before_shop_loop_item_title', 'add_quickmore',1);

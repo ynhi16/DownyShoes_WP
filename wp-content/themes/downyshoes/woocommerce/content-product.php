@@ -27,7 +27,14 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 <!-- col-md-4 product-men -->
 <li <?php wc_product_class( 'col-md-4 product-men', $product ); ?>>
     <div class="product-shoe-info shoe">
-        <?php
+        <div class="men-pro-item">
+            <div class="men-thumb-item">
+                <div class="men-cart-pro">
+                    <div class="inner-men-cart-pro">
+                        <a href="<?php the_permalink() ?>" class="link-product-add-cart">Xem ngay</a>
+                    </div>
+                </div>
+                <?php
 		/**
 		 * Hook: woocommerce_before_shop_loop_item.
 		 *
@@ -35,16 +42,21 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 		 */
 		do_action( 'woocommerce_before_shop_loop_item' );
 		?>
+
+                <?php 
+				/**
+				 * Hook: woocommerce_before_shop_loop_item_title.
+				 *
+				 * @hooked woocommerce_show_product_loop_sale_flash - 10
+				 * @hooked woocommerce_template_loop_product_thumbnail - 10
+				 */
+				do_action( 'woocommerce_before_shop_loop_item_title' );
+				?>
+
+            </div>
+        </div>
         <div class="item-info-product">
             <?php 
-		/**
-		 * Hook: woocommerce_before_shop_loop_item_title.
-		 *
-		 * @hooked woocommerce_show_product_loop_sale_flash - 10
-		 * @hooked woocommerce_template_loop_product_thumbnail - 10
-		 */
-		do_action( 'woocommerce_before_shop_loop_item_title' );
-
 		/**
 		 * Hook: woocommerce_shop_loop_item_title.
 		 *
