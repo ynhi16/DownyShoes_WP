@@ -1491,12 +1491,13 @@ button.btn1 {
 }
 
 .page {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .title {
     text-align: center;
-    padding: 10px;
+    padding-bottom: 20px;
 }
 
 

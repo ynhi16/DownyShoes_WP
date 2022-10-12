@@ -1011,7 +1011,7 @@ span.item_price {
     height: 34px;
 }
 
-button.shoe-cart:hover {
+.button.shoe-cart:hover {
     background: #fb383b;
 }
 
