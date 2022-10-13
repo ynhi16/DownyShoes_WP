@@ -209,3 +209,7 @@ add_filter( 'use_widgets_block_editor', 'example_use_widgets_block_editor' );
 // 	echo '';
 // }
 // add_action('woocommerce_before_shop_loop_item_title', 'add_quickmore',1);
+function remove_sale_flash(){
+	remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
+ }
+ add_action( 'woocommerce_before_single_product_summary', 'remove_sale_flash', 1 );

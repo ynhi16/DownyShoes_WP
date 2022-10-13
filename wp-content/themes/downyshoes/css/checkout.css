@@ -93,8 +93,6 @@ table.timetable_sub {
     font-size: 18px;
     color: #fff;
     text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
     border: 1px solid #b2b2b2;
     vertical-align: bottom;
 }
@@ -515,7 +513,7 @@ a.btn.btn-primary {
     margin-bottom: 0;
     background: #fff;
     background-size: 4% !important;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
 }
 
 select.form-control.option-w3ls {

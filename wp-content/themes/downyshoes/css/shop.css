@@ -1025,6 +1025,7 @@ span.item_price {
     margin: 0;
     letter-spacing: 1px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .single-right-left p {
@@ -1035,7 +1036,7 @@ span.item_price {
 
 .single-right-left del {
     color: #555;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-weight: 300;
     font-size: 0.8em;
 }
@@ -1068,10 +1069,6 @@ span.item_price {
     font-size: 16px;
     margin: 0 0 12px;
     letter-spacing: 1px;
-}
-
-.color-quality-right select {
-    padding: 5px 21px;
 }
 
 .colr {
@@ -1272,7 +1269,7 @@ p.para {
     margin-top: 1em;
 }
 
-span.item_price {
+.item_price span {
     font-size: 19px;
     color: #212020;
     font-weight: 600;
@@ -1481,11 +1478,109 @@ ins {
     text-decoration: none;
 }
 
+p.stars a {
+    position: relative;
+    height: 1em;
+    width: 1em;
+    text-indent: -999em;
+    display: inline-block;
+    text-decoration: none;
+}
+
+p.stars a::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    font-family: WooCommerce;
+    content: "\e021";
+    text-indent: 0;
+}
+
+p.stars a:hover~a::before {
+    content: "\e021"
+}
+
+p.stars:hover a::before {
+    content: "\e020"
+}
+
+p.stars.selected a.active::before {
+    content: "\e020"
+}
+
+p.stars.selected a.active~a::before {
+    content: "\e021"
+}
+
+p.stars.selected a:not(.active)::before {
+    content: "\e020"
+}
+
+div.product .woocommerce-product-rating {
+    margin-bottom: 1.618em;
+}
+
+.woocommerce-product-rating::after,
+.woocommerce-product-rating::before {
+    content: " ";
+    display: table;
+}
+
+.woocommerce-product-rating .star-rating {
+    margin: 3px 4px 0 0;
+    float: left
+}
+
+.star-rating {
+    float: right;
+    overflow: hidden;
+    position: relative;
+    height: 1em;
+    line-height: 1;
+    font-size: 1em;
+    width: 5.4em;
+    font-family: star;
+}
+
+.star-rating::before {
+    content: "sssss";
+    color: #d3ced2;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.star-rating span {
+    overflow: hidden;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 1.5em;
+}
+
+.woocommerce-product-rating::after,
+div.product .woocommerce-tabs ul.tabs::after {
+    clear: both;
+}
+
+.star-rating span::before {
+    content: "SSSSS";
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+
 .onsale {
     background: #fb383b;
     color: #fff;
     right: 0px;
-    top: 0px;
+    /* top: 0px; */
     position: absolute;
     width: 80px;
     font-size: 12px;
@@ -1494,11 +1589,55 @@ ins {
     line-height: 2.3;
 }
 
-del span.amount bdi {
+.price del span.amount bdi {
     font-size: 12px;
+}
+
+.item_price del span.amount bdi,
+.item_price del span.amount span {
+    font-size: 16px;
+    font-weight: 100;
+    padding-right: 10px;
+}
+
+.quantity {
+    margin-bottom: 15px;
+}
+
+.quantity .qty {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.single_add_to_cart_button {
+    font-size: 13px;
+    color: #fff;
+    background: #1d1d1d;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 0.7em 1em;
+    outline: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.product_meta {
+    margin-top: 15px;
+}
+
+.posted_in,
+.tagged_as {
+    padding-bottom: 5px;
+}
+
+.woocommerce-product-details__short-description p {
+    font-size: 13px;
 }
 
 
 /* .grid-price {
-    margin-top: -10px;
+margin-top: -10px;
 } */
