@@ -213,3 +213,8 @@ function remove_sale_flash(){
 	remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
  }
  add_action( 'woocommerce_before_single_product_summary', 'remove_sale_flash', 1 );
+
+function remove_loop_rating(){
+	remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
+ }
+ add_action( 'woocommerce_after_shop_loop_item_title', 'remove_loop_rating', 1 );

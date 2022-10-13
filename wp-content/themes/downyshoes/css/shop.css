@@ -1041,24 +1041,6 @@ span.item_price {
     font-size: 0.8em;
 }
 
-.description {
-    margin: 1.5em 0;
-}
-
-.description h5 {
-    color: #545454;
-    font-size: 0.9em;
-    margin-bottom: 12px;
-    letter-spacing: 1px;
-}
-
-.description p {
-    color: #545454;
-    line-height: 1.8em;
-    margin: 0.5em 0 0;
-    font-size: 0.9em;
-}
-
 .occasional {
     margin: 2em 0;
 }
@@ -1635,6 +1617,10 @@ div.product .woocommerce-tabs ul.tabs::after {
 
 .woocommerce-product-details__short-description p {
     font-size: 13px;
+}
+
+.woocommerce-product-gallery__wrapper img {
+    border: 1px solid #D1CFCF;
 }
 
 

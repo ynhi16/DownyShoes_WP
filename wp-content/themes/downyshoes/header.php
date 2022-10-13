@@ -14,12 +14,17 @@
     <!-- //custom-theme -->
     <link href="<?php bloginfo('template_directory')?>/css/bootstrap.css" rel="stylesheet" type="text/css"
         media="all" />
+    <!-- <link href="<?php bloginfo('template_directory')?>/css/bootstrap.min.css" rel="stylesheet" type="text/css"
+        media="all" /> -->
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/shop.css" type="text/css" media="screen"
         property="" />
     <link href="<?php bloginfo('template_directory')?>/css/style7.css" rel="stylesheet" type="text/css" media="all" />
     <link href="<?php bloginfo('template_directory')?>/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="<?php bloginfo('template_directory')?>/css/shop.css" rel="stylesheet" type="text/css" media="all" />
     <link href="<?php bloginfo('template_directory')?>/css/checkout.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<?php bloginfo('template_directory')?>/css/easy-responsive-tabs.css" rel="stylesheet" type="text/css"
+        media="all" />
+
     <!-- font-awesome-icons -->
     <link href="<?php bloginfo('template_directory')?>/css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome-icons -->
