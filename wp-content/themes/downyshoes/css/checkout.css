@@ -218,9 +218,10 @@ table.timetable_sub {
     top: 0.1em;
 }
 
-.checkout {
+
+/* .checkout {
     padding: 5em 0;
-}
+} */
 
 .address_form {
     float: right;
@@ -608,6 +609,10 @@ a.submit.check_out {
 .woocommerce table.shop_table tfoot th {
     white-space: nowrap;
     border-bottom: solid 1px #cdcdcd;
+}
+
+.woocommerce-checkout h3 {
+    margin: 2rem 0;
 }
 
 

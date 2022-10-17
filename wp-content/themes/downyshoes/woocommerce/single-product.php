@@ -20,8 +20,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
+<div class="ads-grid_shop">
+    <div class="shop_inner_inf">
 
-<?php
+        <?php
 		/**
 		 * woocommerce_before_main_content hook.
 		 *
@@ -31,31 +33,41 @@ get_header( 'shop' ); ?>
 		//do_action( 'woocommerce_before_main_content' );
 		?>
 
-<?php while ( have_posts() ) : ?>
-<?php the_post(); ?>
-
-<?php wc_get_template_part( 'content', 'single-product' ); ?>
-
-<?php endwhile; // end of the loop. ?>
-
-<?php
+        <div class="row">
+            <div class="side-bar col-md-3">
+                <?php
 				/**
 				 * woocommerce_after_main_content hook.
 				 *
 				 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
 				 */
-				do_action( 'woocommerce_after_main_content' );
-			?>
+				//do_action( 'woocommerce_after_main_content' );
+				?>
 
-<?php
-		/**
-		 * woocommerce_sidebar hook.
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
-		do_action( 'woocommerce_sidebar' );
-	?>
 
+                <?php
+					/**
+					 * woocommerce_sidebar hook.
+					 *
+					 * @hooked woocommerce_get_sidebar - 10
+					 */
+					do_action( 'woocommerce_sidebar' );
+					?>
+            </div>
+            <div class="col-md-9">
+
+                <?php while ( have_posts() ) : ?>
+                <?php the_post(); ?>
+
+                <?php wc_get_template_part( 'content', 'single-product' ); ?>
+
+                <?php endwhile; // end of the loop. ?>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
 <?php
 get_footer( 'shop' );
 
