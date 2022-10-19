@@ -551,7 +551,8 @@ select.form-control.option-w3ls {
     border-radius: 0;
 }
 
-a.submit.check_out {
+a.submit.check_out,
+button.submit {
     /* display: block; */
     /* position: relative; */
     padding: 10px 15px;
